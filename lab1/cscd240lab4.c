@@ -32,9 +32,7 @@ int main(void) {
 }
 
 void printOddEvenZeros(int n) {
-  int e = 0;
-  int o = 0;
-  int z = 0;
+  int e = 0, o = 0, z = 0;
   char* nString;
   sprintf(nString, "%d", n);  // store number as string in nString
   int length = strlen(nString);
