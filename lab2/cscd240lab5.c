@@ -12,8 +12,9 @@ int main(int argc, char **argv) {
     selectionSort(array, total); // sorts the array
     mean = calcMean(total, array);
     median = calcMedian(array, total);
-    displayResults(mean, median); // prints to the screen the mean of the array
-    is[man value] and the median is[median value] \n total = readTotal();
-  } // end while
+    displayResults(mean, median);
+    // prints to the screen the mean of the array [mean value] and the median
+    // is[median value] \n total = readTotal();
+  }
   return 0;
-} // end main
+}
