@@ -7,6 +7,10 @@ int readTotal() {
   do {
     printf("Please enter a number 1-25: ");
     scanf("%d", &input);
+    if (input == 999) {
+      printf("Goodbye!\n");
+      break;
+    }
   } while (input <= 0 || input > 25);
   return input;
 }
@@ -48,4 +52,29 @@ void selectionSort(int *array, int total) {
   arrayPrinter(total, array);
 }
 
-// 4 6 8
+double calcMean(int total, int *array) {
+  int sum = 0;
+  for (int i = 0; i < total; i++) {
+    sum += array[i];
+  }
+  return (double)sum / total;
+}
+
+double calcMedian(int *array, int total) {
+  if (total % 2 == 0) {
+    int indexOne = total / 2;
+    int indexTwo = indexOne - 1;
+    return (double)((array[indexOne] + array[indexTwo]) / 2);
+  } else {
+    int middleIndex = total / 2;
+    return (double)array[middleIndex];
+  }
+}
+
+void displayResults(double mean, double median) {
+  printf("The mean of the array %f and the median is %f.\n", mean, median);
+}
+// 1 2 3 4 5 6
+// 0 1 2 3 4 5
+//-----|-|
+// add those two values and divide by 2 to get median

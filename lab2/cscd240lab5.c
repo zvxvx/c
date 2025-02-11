@@ -7,11 +7,10 @@ int main(void) {
   while (total != 999) {
     fillArray(total, array);     // fills the array with numbers up to total
     selectionSort(array, total); // sorts the array
-    // mean = calcMean(total, array);
-    // median = calcMedian(array, total);
-    // displayResults(mean, median);
-    // prints to the screen the mean of the array [mean value] and the median
-    // is[median value] \n total = readTotal();
+    mean = calcMean(total, array);
+    median = calcMedian(array, total);
+    displayResults(mean, median);
+    total = readTotal();
   }
   return 0;
 }
