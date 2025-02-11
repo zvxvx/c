@@ -9,6 +9,5 @@ void selectionSort(int *array, int total);
 int calcMean(int total, int *array);
 int calcMedian(int *array, int total);
 void displayResults(int mean, int median);
-void arrayPrinter(int total, int *array);
 
 #endif

@@ -30,6 +30,8 @@ void fillArray(int total, int *array) {
     scanf("%d", &num);
     array[i] = num;
   }
+  printf("Unsorted array: ");
+  arrayPrinter(total, array);
 }
 
 void selectionSort(int *array, int total) {
@@ -42,6 +44,8 @@ void selectionSort(int *array, int total) {
       }
     }
   }
+  printf("Sorted array: ");
+  arrayPrinter(total, array);
 }
 
 // 4 6 8
