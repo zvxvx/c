@@ -1,0 +1,44 @@
+Please enter a number 1-25 for the length of the array: 5
+Enter a number to put in the array: 3
+Enter a number to put in the array: 8
+Enter a number to put in the array: 5
+Enter a number to put in the array: 9
+Enter a number to put in the array: 3
+Unsorted array: [3 8 5 9 3]
+Sorted array: [3 3 5 8 9]
+The mean of the array 5.60 and the median is 5.00.
+Please enter a number 1-25 for the length of the array: 8
+Enter a number to put in the array: 43
+Enter a number to put in the array: 87
+Enter a number to put in the array: 2
+Enter a number to put in the array: 7
+Enter a number to put in the array: 98
+Enter a number to put in the array: 24
+Enter a number to put in the array: 67
+Enter a number to put in the array: 2
+Unsorted array: [43 87 2 7 98 24 67 2]
+Sorted array: [2 2 7 24 43 67 87 98]
+The mean of the array 41.25 and the median is 33.50.
+Please enter a number 1-25 for the length of the array: 2
+Enter a number to put in the array: 5
+Enter a number to put in the array: 8
+Unsorted array: [5 8]
+Sorted array: [5 8]
+The mean of the array 6.50 and the median is 6.50.
+Please enter a number 1-25 for the length of the array: 11
+Enter a number to put in the array: 8
+Enter a number to put in the array: 3
+Enter a number to put in the array: 7
+Enter a number to put in the array: 98
+Enter a number to put in the array: 35
+Enter a number to put in the array: 2
+Enter a number to put in the array: 7
+Enter a number to put in the array: 6
+Enter a number to put in the array: 23
+Enter a number to put in the array: 7
+Enter a number to put in the array: 2
+Unsorted array: [8 3 7 98 35 2 7 6 23 7 2]
+Sorted array: [2 2 3 6 7 7 7 8 23 35 98]
+The mean of the array 18.00 and the median is 7.00.
+Please enter a number 1-25 for the length of the array: 999
+Goodbye!

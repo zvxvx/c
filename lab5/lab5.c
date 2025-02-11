@@ -64,7 +64,7 @@ double calcMedian(int *array, int total) {
   if (total % 2 == 0) {
     int indexOne = total / 2;
     int indexTwo = indexOne - 1;
-    return (double)((array[indexOne] + array[indexTwo]) / 2);
+    return (double)(array[indexOne] + array[indexTwo]) / 2;
   } else {
     int middleIndex = total / 2;
     return (double)array[middleIndex];
@@ -72,5 +72,5 @@ double calcMedian(int *array, int total) {
 }
 
 void displayResults(double mean, double median) {
-  printf("The mean of the array %f and the median is %f.\n", mean, median);
+  printf("The mean of the array %.2f and the median is %.2f.\n", mean, median);
 }
