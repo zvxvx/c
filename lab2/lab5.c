@@ -1,17 +1,17 @@
-#include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
+
+const int MAX = 25;
 
 int readTotal() {
   int input;
   do {
-    printf("Please enter a number 1-25: ");
+    printf("Please enter a number 1-25 for the length of the array: ");
     scanf("%d", &input);
     if (input == 999) {
       printf("Goodbye!\n");
       break;
     }
-  } while (input <= 0 || input > 25);
+  } while (input <= 0 || input > MAX);
   return input;
 }
 
@@ -74,7 +74,3 @@ double calcMedian(int *array, int total) {
 void displayResults(double mean, double median) {
   printf("The mean of the array %f and the median is %f.\n", mean, median);
 }
-// 1 2 3 4 5 6
-// 0 1 2 3 4 5
-//-----|-|
-// add those two values and divide by 2 to get median
