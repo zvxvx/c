@@ -2,7 +2,7 @@
 
 const int MAX = 25;
 
-int readTotal() {
+int readTotal(void) {
   int input;
   do {
     printf("Please enter a number 1-25 for the length of the array: ");

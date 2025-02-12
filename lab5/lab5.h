@@ -3,7 +3,7 @@
 
 extern const int MAX;
 
-int readTotal();
+int readTotal(void);
 void fillArray(int total, int *array);
 void selectionSort(int *array, int total);
 double calcMean(int total, int *array);
