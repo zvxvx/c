@@ -23,7 +23,7 @@ void printOddEvenZeros(int n) {
     int number = nString[i] - '0';  // allows us to use the int value
     if (number % 2 == 0 && number != 0) {
       e++;
-    } else if (number % 2 != 0) {  // same thing here
+    } else if (number % 2 != 0) {
       o++;
     } else {
       z++;
