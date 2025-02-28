@@ -1,0 +1,6 @@
+# ninja log v6
+1	68	1740706809034927243	CMakeFiles/FilesAndArrays.dir/cscd240Lab7.c.o	a0c99324ae3c0e39
+2	69	1740706809035697415	CMakeFiles/FilesAndArrays.dir/lab7.c.o	ebb9f2fdfd057828
+2	69	1740706809035967625	CMakeFiles/FilesAndArrays.dir/utils/fileUtils.c.o	3873d888cbc5aa61
+3	69	1740706809036162877	CMakeFiles/FilesAndArrays.dir/utils/sortUtils.c.o	8880a0531c0e09fc
+69	105	1740706809102827958	FilesAndArrays	536fc8e32df19b00
