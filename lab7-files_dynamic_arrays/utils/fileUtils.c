@@ -15,8 +15,7 @@ FILE *openInputFile(char *fn) {
   FILE *fin = fopen(fn, "r");
   if (fin == NULL) {
     printf("Problem with opening file!\n");
-    readFileName(fn);
-    fin = fopen(fn, "r");
+    return NULL;
   }
   return fin;
 }
