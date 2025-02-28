@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/FilesAndArrays.dir/cscd240Lab7.c.o CMakeFiles/FilesAndArrays.dir/lab7.c.o CMakeFiles/FilesAndArrays.dir/utils/fileUtils.c.o CMakeFiles/FilesAndArrays.dir/utils/sortUtils.c.o -o FilesAndArrays 

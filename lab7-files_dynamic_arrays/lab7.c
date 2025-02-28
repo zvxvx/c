@@ -22,10 +22,8 @@ int menu() {
 
 int readDays(FILE *fin) {
   int days;
-  if (fscanf(fin, "%s", &days) == 1) {
-    return days;
-  }
-  return -1;
+  fscanf(fin, "%d", &days);
+  return days;
 }
 
 int *fillArray(int total, FILE *fin) {
@@ -34,20 +32,15 @@ int *fillArray(int total, FILE *fin) {
   return temp;
 }
 
-void displayMaxTemp(int *array, int total) {
-}
+void displayMaxTemp(int *array, int total) {}
 
-void displayMinTemp(int *array, int total) {
-}
+void displayMinTemp(int *array, int total) {}
 
-void displayAvgTemp(int *array, int total) {
-}
+void displayAvgTemp(int *array, int total) {}
 
-void displayMedianTemp(int *array, int total) {
-}
+void displayMedianTemp(int *array, int total) {}
 
-void cleanUp(int *array) {
-}
+void cleanUp(int *array) {}
 
 void printArray(int *array, int total) {
   int x;

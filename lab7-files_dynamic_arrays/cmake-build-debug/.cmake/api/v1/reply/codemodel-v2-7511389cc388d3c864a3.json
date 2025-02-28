@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FilesAndArrays::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FilesAndArrays-Debug-0993fee9deae082819e6.json",
+					"jsonFile" : "target-FilesAndArrays-Debug-dfc4a291a9903aa13a27.json",
 					"name" : "FilesAndArrays",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/sakura/dev/c/lab7-files_dynamic_arrays/cmake-build-debug",
-		"source" : "/home/sakura/dev/c/lab7-files_dynamic_arrays"
+		"build" : "/Users/sakura/dev/c/lab7-files_dynamic_arrays/cmake-build-debug",
+		"source" : "/Users/sakura/dev/c/lab7-files_dynamic_arrays"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 7
 	}
 }
