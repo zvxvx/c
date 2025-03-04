@@ -42,21 +42,23 @@ int* fillArray(int total, FILE *fin) {
 }
 
 void displayMaxTemp(int *array, int total) {
+  int MAX = -99999;
   for (int i = 0; i < total; i++) {
-    if (array[i] > array[0]) {
-      array[0] = array[i];
+    if (array[i] > MAX) {
+      MAX = array[i];
     }
   }
-  printf("%d\n",array[0]);
+  printf("%d\n",MAX);
 }
 
 void displayMinTemp(int *array, int total) {
+  int MIN = 99999;
   for (int i = 0; i < total; i ++) {
-    if (array[i] < array[0]) {
-      array[0] = array[i];
+    if (array[i] < MIN) {
+      MIN = array[i];
     }
   }
-  printf("%d\n", array[0]);
+  printf("%d\n", MIN);
 }
 
 void displayAvgTemp(int *array, int total) {
