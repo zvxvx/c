@@ -46,7 +46,7 @@ int main() {
 			total = readDays(fin);
 			temps = fillArray(total, fin);
 			selectionSort(temps, total);
-		} // end choice == 6
+		}
 	} while (choice != 6);
 
 	fclose(fin);

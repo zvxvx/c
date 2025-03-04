@@ -13,9 +13,9 @@ FILE *openInputFile(char *fn) {
   // will ensure the file is opened. If not reprompt
   // by calling readFileName
   FILE *fin = fopen(fn, "r");
-  if (fin == NULL) {
-    printf("Problem with opening file!\n");
-    return NULL;
+  while (fin == NULL) {
+    readFileName(fn);
+    fin = fopen(fn, "r");
   }
   return fin;
 }

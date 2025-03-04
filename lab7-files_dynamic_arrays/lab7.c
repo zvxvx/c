@@ -29,19 +29,56 @@ int readDays(FILE *fin) {
   return -1;
 }
 
-int *fillArray(int total, FILE *fin) {
-  int *temp = NULL;
-
-  return temp;
+int* fillArray(int total, FILE *fin) {
+  int *numArray = malloc(total * sizeof(int));
+  if (numArray == NULL) {
+    return NULL;
+  }
+  int i = 0;
+  while (i < total && fscanf(fin, "%d", &numArray[i]) == 1) {
+    i++;
+  }
+  return numArray;
 }
 
-void displayMaxTemp(int *array, int total) {}
+void displayMaxTemp(int *array, int total) {
+  for (int i = 0; i < total; i++) {
+    if (array[i] > array[0]) {
+      array[0] = array[i];
+    }
+  }
+  printf("%d\n",array[0]);
+}
 
-void displayMinTemp(int *array, int total) {}
+void displayMinTemp(int *array, int total) {
+  for (int i = 0; i < total; i ++) {
+    if (array[i] < array[0]) {
+      array[0] = array[i];
+    }
+  }
+  printf("%d\n", array[0]);
+}
 
-void displayAvgTemp(int *array, int total) {}
+void displayAvgTemp(int *array, int total) {
+  int sum = 0;
+  for (int i = 0; i < total; i++) {
+    sum += array[i];
+  }
+  int avg = sum / total;
+  printf("%d\n", avg);
+}
 
-void displayMedianTemp(int *array, int total) {}
+void displayMedianTemp(int *array, int total) {
+  double med;
+  if (total % 2 == 0) {
+    int mid = array[(total / 2)];
+    int midMinusOne = array[((total / 2) - 1)];
+    med = ((double)(mid + midMinusOne) / 2);
+  } else {
+    med = (double) array[(total/2)];
+  }
+  printf("%.2f\n", med);
+}
 
 void cleanUp(int *array) {
   free(array);
