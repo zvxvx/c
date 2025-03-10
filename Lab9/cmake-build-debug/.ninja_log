@@ -1,0 +1,15 @@
+# ninja log v6
+37	74	1741637644595907544	cscd240Lab9.c	293950bb2e2a9601
+0	44	1741637657871623952	CMakeFiles/lab9.c.dir/cscd240Lab9.c.o	635aec63d641745c
+1	91	1741637631167761466	CMakeFiles/cscd240Lab9.c.dir/utils/utils.c.o	eda52f8c952e772a
+75	170	1741637992874032346	Lab9	3b9546b2d2895453
+1	52	1741638196770123286	build.ninja	633fa50ff3682b6d
+0	44	1741637657871503828	CMakeFiles/lab9.c.dir/utils/utils.c.o	f1ce0367dfd272c7
+1	90	1741637631167398385	CMakeFiles/cscd240Lab9.c.dir/utils/fileUtils.c.o	6d14eebfdf152ad7
+1	37	1741637644559191846	CMakeFiles/cscd240Lab9.c.dir/cscd240Lab9.c.o	5ccaffb9aa8c5f4d
+0	44	1741637657871236164	CMakeFiles/lab9.c.dir/utils/fileUtils.c.o	c609b0e6da424a0f
+1	74	1741637992800488365	CMakeFiles/Lab9.dir/lab9.c.o	e7d1b363f89d4e13
+1	46	1741637485351736145	CMakeFiles/cscd240Lab9.c.dir/lab9.c.o	9da9230cfeec1c06
+1	75	1741637992800195240	CMakeFiles/Lab9.dir/cscd240Lab9.c.o	fc6ec0d2dbee63b4
+1	75	1741637992800635156	CMakeFiles/Lab9.dir/utils/fileUtils.c.o	6dc3edf6dd50b8ae
+2	75	1741637992800787864	CMakeFiles/Lab9.dir/utils/utils.c.o	15f78c2f166f415
