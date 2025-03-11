@@ -24,6 +24,7 @@ int menu() {
 
 
 Stock *fillArray(FILE *fin, int total) {
+	char entry[MAX];
 	Stock *array = calloc(total, sizeof(Stock));
 	if (fin == NULL) {
 		printf("Cannot read from file.");
@@ -34,9 +35,7 @@ Stock *fillArray(FILE *fin, int total) {
 		return NULL;
 	}
     for (int i = 0; i < total; i++) {
-	    fscanf(fin, "%s", array[i].symbol);
-	    fscanf(fin, "%s", array[i].name);
-	    fscanf(fin, "%f", &array[i].price);
+	    fscanf(fin, "%s %s %d", array[i].symbol, array[i].name, &array[i].price);
     }
 	return array;
 }
