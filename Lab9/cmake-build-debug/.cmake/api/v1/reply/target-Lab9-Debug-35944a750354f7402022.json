@@ -98,6 +98,13 @@
 				4,
 				5
 			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				6
+			]
 		}
 	],
 	"sources" : 
@@ -135,6 +142,11 @@
 			"backtrace" : 1,
 			"path" : "utils/utils.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "stocks.txt",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

@@ -7,4 +7,5 @@ add_executable(Lab9
         utils/fileUtils.c
         utils/utils.c
         utils/fileUtils.h
-        utils/utils.h)
+        utils/utils.h
+stocks.txt)

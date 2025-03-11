@@ -14,8 +14,8 @@ int main(int argc, char ** argv)
 	rewind(fin);
 
 	array = fillArray(fin, total);
-	printArray(array, total);
 	fclose(fin);
+	printArray(array, total);
 
 	do
 	{
