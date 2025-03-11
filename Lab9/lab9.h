@@ -5,12 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct stock
-{
+struct stock {
    char *symbol;
    char *name;
    double price;
-
 };
 
 typedef struct stock Stock;
@@ -21,7 +19,7 @@ typedef struct stock Stock;
  * Reading from the file.  Note the file  * contains 3 lines per Stock.
  * You are guaranteed the file is well formed
  * @parma fin Representing an open and valid FILE pointer
- * @param int Representing the number of stocks int he array
+ * @param int Representing the number of stocks in the array
  * @return Stock * Representing the array of Stocks
  */
 Stock * fillArray(FILE * fin, int total);
@@ -70,7 +68,7 @@ void priceSort(int total, Stock array[]);
 void printArray(Stock array[], int total);
 
 /**
- * Cleans up the dynamic memory allocated in the array for sybmol and name
+ * Cleans up the dynamic memory allocated in the array for symbol and name
  * @param array Representing the Stock array
  * @param total Representing the total items in the array
  */

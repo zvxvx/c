@@ -1,13 +1,10 @@
 #include "lab9.h"
+
+#include <signal.h>
+
 #include "./utils/utils.h"
 
 extern const int MAX;
-
-struct Stock {
-	char *symbol;
-	char *companyName;
-	double currentPrice;
-};
 
 int menu() {
 	int num;
@@ -27,9 +24,20 @@ int menu() {
 
 
 Stock *fillArray(FILE *fin, int total) {
-	int x = 0;
-	char temp[100];
-	Stock *array = NULL;
+	Stock *array = calloc(total, sizeof(Stock));
+	if (fin == NULL) {
+		printf("Cannot read from file.");
+		return NULL;
+	}
+	if (array == NULL) {
+		printf("Cannot read from array.");
+		return NULL;
+	}
+    for (int i = 0; i < total; i++) {
+	    fscanf(fin, "%s", array[i].symbol);
+	    fscanf(fin, "%s", array[i].name);
+	    fscanf(fin, "%f", &array[i].price);
+    }
 	return array;
 }
 
@@ -39,8 +47,7 @@ void symbolSort(Stock array[], int total) {
 
 
 void printArray(Stock array[], int total) {
-	int x;
-	for (x = 0; x < total; x++)
+	for (int x = 0; x < total; x++)
 		printf("%s - %s - $%.2lf\n\n", array[x].name, array[x].symbol,
 		       array[x].price);
 }

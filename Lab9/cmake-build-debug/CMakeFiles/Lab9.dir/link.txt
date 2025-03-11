@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/Lab9.dir/cscd240Lab9.c.o CMakeFiles/Lab9.dir/lab9.c.o CMakeFiles/Lab9.dir/utils/fileUtils.c.o CMakeFiles/Lab9.dir/utils/utils.c.o -o Lab9 

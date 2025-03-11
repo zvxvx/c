@@ -21,8 +21,9 @@ FILE *openInputFile() {
 int countRecords(FILE *fin, const int linesPerRecord) {
     int count = 0;
     char temp[MAXIMUM];
-
-
+    while (fgets(temp, sizeof(temp), fin) != NULL) {
+        count++;
+    }
     return count / linesPerRecord;
 }
 
