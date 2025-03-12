@@ -15,7 +15,6 @@ int main(int argc, char ** argv)
 
 	array = fillArray(fin, total);
 	fclose(fin);
-	printArray(array, total);
 
 	do
 	{
