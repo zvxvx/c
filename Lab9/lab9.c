@@ -44,7 +44,15 @@ Stock *fillArray(FILE *fin, int total) {
 
 
 void symbolSort(Stock array[], int total) {
-
+    for (int i = 0; i < total - 1; i++) {
+	    for (int j = i + 1; j < total; j++) {
+		    if (strcmp(array[i].symbol, array[j].symbol) > 0) {
+			    struct stock temp = array[i];
+		    	array[i] = array[j];
+		    	array[j] = temp;
+		    }
+	    }
+    }
 }
 
 
@@ -56,12 +64,34 @@ void printArray(Stock array[], int total) {
 
 
 void companySort(Stock array[], int total) {
+    for (int i = 0; i < total - 1; i++) {
+	    for (int j = i + 1; j < total; j++) {
+		    if (strcmp(array[i].name, array[j].name) > 0) {
+			    struct stock temp = array[i];
+		    	array[i] = array[j];
+		    	array[j] = temp;
+		    }
+	    }
+    }
 } // end companySort
 
 
 void priceSort(int total, Stock array[]) {
+    for (int i = 0; i < total - 1; i++) {
+	    for (int j = i + 1; j < total; j++) {
+		    if (array[i].price > array[j].price) {
+			    struct stock temp = array[i];
+		    	array[i] = array[j];
+		    	array[j] = temp;
+		    }
+	    }
+    }
 } // end priceSort
 
 
 void cleanUp(Stock *array, int total) {
+	for (int i = 0; i < total; i++) {
+	free(array[i].name);
+	free(array[i].symbol);
+	}
 } // end cleanUp
